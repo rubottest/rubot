@@ -1,13 +1,6 @@
 require 'rubot/state'
 
 module Rubot
-  # Rather than build a parser, take
-  # advantage of the fact that the robot
-  # scripts are valid (although not idiomatic) ruby.
-
-  # Converting the script to lowercase isn't great,
-  # but it makes for far more idiomatic code.
-  # I tried using method constants instead but it was harder to understand.
 
   class Dsl
     attr_reader :status, :output
