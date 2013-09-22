@@ -2,6 +2,8 @@ require 'rubot/state'
 
 module Rubot
 
+  # Class DSL implements the toy robot control language
+  # E.G. Dsl.new.run("PLACE 0,0,NORTH \n MOVE \n REPORT").output
   class Dsl
     attr_reader :status, :output
 
@@ -12,6 +14,7 @@ module Rubot
 
     def run(script)
       self.instance_eval(script.downcase)
+      self
     end
 
     def self.status_method(name)

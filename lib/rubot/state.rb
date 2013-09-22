@@ -8,6 +8,8 @@ module Rubot
     EW = { :east => 1, :west => -1 }.freeze
   end
 
+  # Class state represents the position of a toy robot
+  # at a point in time.
   class State
 
     attr_reader :ew, :ns, :face
