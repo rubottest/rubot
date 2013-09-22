@@ -4,14 +4,13 @@ An interpreter / simulator for a toy robot control language.
 
 # Usage
 
-./bin/rubot [-hv] [file]
+./bin/rubot [-h] [file]
 
 If file is absent or '-', rubot reads commands from STDIN instead.
 
 The options are as follows.
 
   -h: Prints this message and exits.
-  -v: Produce verbose output, including warnings.
 
 # Implementation
 
