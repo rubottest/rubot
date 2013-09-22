@@ -11,4 +11,5 @@ Cane::RakeTask.new(:quality) do |cane|
   cane.abc_max = 5
 end
 
+desc "Run all pre-commit tasks"
 task :ci => [:quality, :spec]
