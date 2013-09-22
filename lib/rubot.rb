@@ -1,5 +1,4 @@
 require 'bundler'
 Bundler.require
+require 'rubot/version'
 require 'rubot/dsl'
-
-VERSION="0.0.1"
